@@ -282,7 +282,7 @@ section { padding: 6.5rem 2.5rem; }
 .svc-card:nth-child(2) { --sc: var(--teal); }
 .svc-card:nth-child(3) { --sc: var(--gold); }
 .svc-bar { height: 3px; background: var(--sc, var(--blue)); }
-.svc-inner { padding: 2.25rem 2rem; }
+.svc-inner { padding: 2.25rem 2rem; display: flex; flex-direction: column; height: 100%; }
 .svc-num {
   font-size: .68rem; font-weight: 800; letter-spacing: .18em;
   color: var(--sc, var(--blue)); margin-bottom: 1rem;
@@ -293,6 +293,7 @@ section { padding: 6.5rem 2.5rem; }
 }
 .svc-desc {
   font-size: .875rem; color: var(--muted); line-height: 1.65; margin-bottom: 1.75rem;
+  flex: 1;
 }
 .svc-feats { list-style: none; display: flex; flex-direction: column; gap: .7rem; }
 .svc-feats li {
